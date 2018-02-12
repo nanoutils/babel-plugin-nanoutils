@@ -1,0 +1,22 @@
+{
+  "name": "babel-plugin-nanoutils",
+  "version": "0.1.0",
+  "description": "Transform or remove unused nanoutils dependencies",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Kelin2025/babel-plugin-nanoutils.git",
+  "author": "Kelin2025 <kelin2025@yandex.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.16.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-3": "^6.24.1",
+    "nanoutils": "^0.0.13"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-3"]
+  }
+}
