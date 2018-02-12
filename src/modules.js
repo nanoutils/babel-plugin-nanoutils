@@ -30,10 +30,10 @@ var methods = fs
   .readdirSync(path.join(nanoutilsPath, 'lib'))
   .map(name => path.basename(name))
 
-export default function resolveModule(name) {
+export default function resolveModule(name, cjs) {
   for (var category in methods) {
     if (contains(name, methods)) {
-      return `nanoutils/lib/${name}`
+      return `nanoutils/${cjs ? 'cjs' : 'lib'}/${name}`
     }
   }
   throw new Error(`Nanoutils method ${name} was not a known function
