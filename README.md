@@ -14,7 +14,7 @@ map(N.add(1), [1, 2, 3])
 To
 ```javascript
 import add from 'nanoutils/es/add'
-import map from 'nanoutils/es/add'
+import map from 'nanoutils/es/map'
 ```
 
 #### Install
